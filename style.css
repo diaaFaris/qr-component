@@ -1,0 +1,74 @@
+/* 
+    ========== Variables ========== 
+*/
+
+:root {
+    --main-color: hsl(218, 44%, 22%);
+    --secondary-color: hsl(220, 15%, 55%);
+    --main-radius: 18px;
+}
+
+/* 
+    ========== General Styles ==========
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 15px;
+    background-color: hsl(212, 45%, 89%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+p {
+    font-size: 15px;
+}
+
+/* ========== Card ========== */
+
+.card {
+    width: 320px;
+    background-color: white;
+    padding: 20px;
+    -webkit-border-radius: var(--main-radius);
+    -moz-border-radius: var(--main-radius);
+    border-radius: var(--main-radius);
+    text-align: center;
+    -webkit-box-shadow: 0 0 15px rgb(0 0 0 / 5%);
+    -moz-box-shadow: 0 0 15px rgb(0 0 0 / 5%);
+    box-shadow: 0 0 15px rgb(0 0 0 / 5%);
+}
+
+.card img {
+    max-width: 100%;
+    -webkit-border-radius: var(--main-radius);
+    -moz-border-radius: var(--main-radius);
+    border-radius: var(--main-radius);
+}
+
+.card h1 {
+    font-size: 22px;
+    margin-top: 20px;
+    color: var(--main-color);
+}
+
+.card p {
+    color: var(--secondary-color);
+    line-height: 1.4;
+}
